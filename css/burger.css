@@ -31,13 +31,13 @@
 
 .top-menu a {
   text-decoration: none;
-  color: black;
+  color: #233249;
   font-size: 0.9em;
 }
 
 nav {
   background-color: #233249;
-  padding: 20px 40px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,18 +54,22 @@ nav {
 }
 
 .menu li {
-  margin-left: 20px;
+  margin-left: 35px;
 }
 
 .menu a {
   text-decoration: none;
   color: white;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .language-switch {
   display: flex;
-  align-items: end;
+  justify-content: flex-end;
+  flex-grow: 1;
+  align-items: center;
+  height: 100%;
 }
 
 .lang-btn {
@@ -73,24 +77,12 @@ nav {
   border: none;
   color: red;
   font-size: 1em;
-  margin-right: 10px;
-  padding: 5px 10px;
-}
-
-.search-container {
-  display: flex;
-  align-items: center;
-}
-
-.search-container input {
-  padding: 5px;
-  border: none;
-  border-radius: 3px;
+  padding: 10px;
 }
 
 .search-container button {
   background-color: red;
   color: white;
   border: none;
-  padding: 12px 20px;
+  padding: 10px;
 }

@@ -59,4 +59,11 @@
     color: var(--sekundaer-clr);
   }
 
-
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block; /* Tilføjet for at gøre margin-auto effektive */
+    margin: 0 auto; /* Centrerer billederne horisontalt */
+   
+  }

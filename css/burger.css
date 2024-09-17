@@ -37,7 +37,6 @@
 
 nav {
   background-color: #233249;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,4 +84,43 @@ nav {
   color: white;
   border: none;
   padding: 10px;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-icon {
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* Position below the nav */
+    left: 0;
+    width: 100%;
+    background-color: #233249;
+  }
+
+  .menu-active {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .top-bar {
+    display: none; /* Hide the top section */
+  }
 }

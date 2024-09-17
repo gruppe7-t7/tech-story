@@ -1,69 +1,65 @@
 @font-face {
-    font-family: "Roboto-bold";
-    src: url(../fonts/Roboto/Roboto-Bold.ttf) format("ttf");
-  }
-  
-  @font-face {
-    font-family: "Roboto-light";
-    src: url(../fonts/Roboto/Roboto-Light.ttf) format("ttf");
-  }
+  font-family: "Roboto-bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("ttf");
+}
 
-  @font-face {
-    font-family: "Roboto-regular";
-    src: url(../fonts/Roboto/Roboto-Regular.ttf) format("ttf");
-  }
+@font-face {
+  font-family: "Roboto-light";
+  src: url(../fonts/Roboto/Roboto-Light.ttf) format("ttf");
+}
 
-  /* fs=font size */
+@font-face {
+  font-family: "Roboto-regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("ttf");
+}
 
-  html {
-    --fs-body: 20px;
-    --fs-xl: 4.4rem; /* Dette svare til 88 px, som passer til vores styletile */
-    --fs-l: 3.25rem;
-    --fs-m: 1.6rem;
-    --fs-s: 1rem;
-    --fs-xs: 0.8rem;
+/* fs=font size */
 
-  
-    
-    --primaer-clr: #E782A9;
-    --sekundaer-clr: #233249; 
-    --tridaer-clr: #EDEDED;
-    --overige-clr: #EA5045; 
-  
-  
-    --lh-main: 2em;
-    
-    --ff-headlines: "Roboto-bold", sans-serif;
-    --ff-main: "Roboto-regular", sans-serif;
-    --ff-special: "Roboto-regular", sans-serif;
-  }
+html {
+  --fs-body: 20px;
+  --fs-xl: 4.4rem; /* Dette svare til 88 px, som passer til vores styletile */
+  --fs-l: 3.25rem;
+  --fs-m: 1.6rem;
+  --fs-s: 1rem;
+  --fs-xs: 0.8rem;
 
-  main {
-    padding: 0 80px; /* Tilføjer lidt plads på siderne */
-  }
+  --primaer-clr: #e782a9;
+  --sekundaer-clr: #233249;
+  --tridaer-clr: #ededed;
+  --overige-clr: #ea5045;
 
-  main p {
-    font-family: var(--ff-main);
-    font-size: var(--fs-xs);
-  }
+  --lh-main: 2em;
 
-  h1 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
-  }
-  
-  h2 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
-  }
+  --ff-headlines: "Roboto-bold", sans-serif;
+  --ff-main: "Roboto-regular", sans-serif;
+  --ff-special: "Roboto-regular", sans-serif;
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block; /* Tilføjet for at gøre margin-auto effektive */
-    margin: 0 auto; /* Centrerer billederne horisontalt */
-   
-  }
+main {
+  padding: 0 80px; /* Tilføjer lidt plads på siderne */
+}
+
+main p {
+  font-family: var(--ff-main);
+  font-size: var(--fs-xs);
+}
+
+h1 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xl);
+  color: var(--sekundaer-clr);
+}
+
+h2 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xl);
+  color: var(--sekundaer-clr);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+
+  display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */
+}

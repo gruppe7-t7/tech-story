@@ -13,3 +13,9 @@
 .flex_col {
   text-align: center;
 }
+
+.overskrift {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}

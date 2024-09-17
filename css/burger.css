@@ -123,3 +123,43 @@ nav {
     display: none; /* Hide the top section */
   }
 }
+
+/*footer*/
+
+.footer {
+  background-color: #233249;
+  color: white;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer h2 {
+  color: white;
+  line-height: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.footer h3 {
+  color: white;
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
+  padding: 16px;
+}
+
+.footer p {
+  color: white;
+}
+
+.footer li {
+  color: white;
+  font-size: 14px;
+  padding-left: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  list-style-type: none;
+}

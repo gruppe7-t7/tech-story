@@ -59,7 +59,6 @@ h2 {
 img {
   max-width: 100%;
   height: auto;
-
   display: block; /* Tilføjet for at gøre margin-auto effektive */
   margin: 0 auto; /* Centrerer billederne horisontalt */
 }

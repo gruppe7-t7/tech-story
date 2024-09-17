@@ -39,11 +39,27 @@ fetch(url, options)
 
 function showData(data) {
   console.log("Fetched data:", data); // Log the data fetched
+
+  // Get the category heading and description elements
+  const categoryHeading = document.querySelector("#categoryInfo h2");
+  const categoryDescription = document.querySelector("#categoryInfo p");
+
   if (data.length === 0) {
     console.log("No products found for this category.");
     // Optionally show a message when no products are found
     document.querySelector("section").innerHTML = "<p>No products found in this category.</p>";
+    categoryHeading.textContent = "No category selected";
+    categoryDescription.textContent = "Please select a category to see the available products.";
   } else {
+    // Update heading and description based on the category
+    if (category) {
+      categoryHeading.textContent = `${category}`;
+      categoryDescription.textContent = `Her finder du alle diverse produkter indenfor ${category}, som du kan få brug for på dine kommende projekter..`;
+    } else {
+      categoryHeading.textContent = "Alle Produkter";
+      categoryDescription.textContent = "Her finder du alle de produkter, du kan leje hos Tech og Story Lab";
+    }
+
     showProducts(data); // Call showProducts with the data
   }
 }

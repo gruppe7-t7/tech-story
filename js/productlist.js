@@ -59,7 +59,6 @@ function showProduct(product) {
   const copy = template.cloneNode(true);
 
   // Change the content
-  copy.querySelector("img").src = product.image || "camera.jpg"; // Use a default image if none is provided
   copy.querySelector("h2").textContent = product.productname;
   copy.querySelector("h3").textContent = product.category;
   copy.querySelector(".brandName").textContent = product.brand;

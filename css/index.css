@@ -55,6 +55,7 @@ body {
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .link-button:hover {
@@ -63,10 +64,11 @@ body {
 
 .bookingh1 {
   color: #ffffff;
-  font-size: 60px;
+  font-size: 100px;
   display: flex;
   justify-content: left;
   margin-left: 100px;
+  padding: 40px;
 }
 
 .booking-section {
@@ -74,12 +76,17 @@ body {
 }
 
 .booking-item {
-  display: flex;
-  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  border-bottom: 1px solid white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .booking-item img {
-  width: 30%;
+  width: 80%;
+  margin: 50px;
 }
 
 .booking-content {
@@ -91,8 +98,8 @@ body {
 
 .h2del2 {
   color: #ffffff;
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 80px;
+  margin-bottom: 50px;
 }
 
 p {

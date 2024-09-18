@@ -80,7 +80,6 @@ body {
 
 .booking-item img {
   width: 30%;
-  object-fit: cover;
 }
 
 .booking-content {

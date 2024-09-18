@@ -61,6 +61,10 @@ h4 {
   padding: 0.2rem;
 }
 
+.back_button {
+  margin: 0;
+}
+
 /*WEB VERSION*/
 @media only screen and (min-width: 768px) {
   .dataLayout {

@@ -62,3 +62,15 @@ img {
   display: block; /* Tilføjet for at gøre margin-auto effektive */
   margin: 0 auto; /* Centrerer billederne horisontalt */
 }
+
+.back_button {
+  background-color: var(--primaer-clr);
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  border: 1px solid var(--primaer-clr);
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.2rem;
+  transition: 0.3s;
+}

@@ -90,7 +90,7 @@ body {
 }
 
 .booking-content {
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,8 +98,8 @@ body {
 
 .h2del2 {
   color: #ffffff;
-  font-size: 80px;
-  margin-bottom: 50px;
+  font-size: 60px;
+  margin-bottom: 0px;
 }
 
 p {

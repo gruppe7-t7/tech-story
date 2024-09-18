@@ -11,24 +11,29 @@ fetch(url, options)
   .then(showCategories);
 
 function showCategories(cats) {
-  const uniqueCategories = new Set(); // To track unique categories
+  const uniqueCategories = new Set(); // For unikke kategorier
 
   cats.forEach((cat) => {
     if (!uniqueCategories.has(cat.category)) {
-      uniqueCategories.add(cat.category); // Add to Set
-      showCategory(cat); // Display only if not already in Set
+      uniqueCategories.add(cat.category); // Tilføj til Set
+      showCategory(cat); // Vis kun, hvis den ikke allerede er i Set
     }
   });
 }
 
 function showCategory(cat) {
-  //Grab Template
-  const template = document.querySelector("template").content;
-  //Clone
+  // Hent template
+  const template = document.querySelector("#categoryTemplate").content;
+
+  // Klon template
   const clone = template.cloneNode(true);
-  //Change content
-  clone.querySelector("a").textContent = cat.category;
+
+  // Tilpas indhold
+  clone.querySelector("h2").textContent = cat.category;
+  clone.querySelector("img").src = `images/${cat.category.toLowerCase()}.webp`; // Dynamisk billede baseret på kategori
+  clone.querySelector("img").alt = cat.category;
   clone.querySelector("a").href = `html/productlist.html?category=${cat.category}`;
-  //Append
-  document.querySelector(".catList ol").appendChild(clone);
+
+  // Append til grid-container
+  document.querySelector(".grid-container").appendChild(clone);
 }

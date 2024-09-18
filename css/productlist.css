@@ -1,0 +1,84 @@
+/*MOBILE VERSION*/
+body {
+  background-color: var(--tridaer-clr);
+}
+
+.dataLayout {
+  text-align: center;
+}
+
+.smallProduct {
+  border: 1px solid #ddd;
+  background-color: white;
+  margin: 1rem;
+  box-sizing: border-box;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  margin: 0;
+  padding: 10px;
+  color: var(--sekundaer-clr);
+}
+
+h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: var(--sekundaer-clr);
+  margin: 0;
+  padding: 5px;
+}
+
+.p_list_style {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: var(--sekundaer-clr);
+  margin: 0;
+  padding: 10px;
+}
+
+.p_list_h2 {
+  font-size: 2rem;
+  margin: 0.6rem;
+}
+
+.booking {
+  background-color: var(--primaer-clr);
+  margin-top: 1rem;
+}
+
+#categoryInfo {
+  margin-top: 1rem;
+}
+
+.tsl_link {
+  background-color: var(--primaer-clr);
+  font-size: 0.5rem;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: white;
+  padding: 0.2rem;
+}
+
+/*WEB VERSION*/
+@media only screen and (min-width: 768px) {
+  .dataLayout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .productList_banner_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 0.9rem;
+  }
+}

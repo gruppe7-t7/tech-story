@@ -4,26 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/productlist.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/burger.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <script src="../js/productlist.js"></script>
+
+
     <title>Product List</title>
 </head>
 
 <body>
+    <header>
+        <div class="top-bar">
+            <div class="left-section">
+                <span>MIT KEA - INTRANET FOR KEA STUDERENDE</span>
+            </div>
+            <div class="right-section">
+                <ul class="top-menu">
+                    <li><a href="#">Find din uddannelse</a></li>
+                    <li><a href="#">Serviceportal</a></li>
+                    <li><a href="#">Itslearning</a></li>
+                    <li><a href="#">Bibliotek</a></li>
+                    <li><a href="#">KEA.DK</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <nav>
+            <a class="nav-left" href="../index.html">
+                <img src="images/kealogo.svg" alt="KEA">
+            </a>
+            <div class="burger-menu">
+                <span class="burger-icon">&#9776;</span>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Studiehåndbog</a></li>
+                <li><a href="#">Vejledning & støtte</a></li>
+                <li><a href="#">Praktik</a></li>
+                <li><a href="#">Internationale muligheder</a></li>
+                <li><a href="#">Studieliv & faciliteter</a></li>
+            </ul>
+            <div class="language-switch">
+                <button class="lang-btn">EN</button>
+                <div class="search-container">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!------------------------------MAIN CONTENT---------------------------->
     <main>
-        <section></section>
+
+        <div class="productList_banner_grid">
+            <div id="categoryInfo">
+                <h2 class="p_list_h2"></h2>
+                <p class="p_list_style"></p>
+            </div>
+            <div class="booking">
+                <h2 class="p_list_h2">Book udstyr</h2>
+                <p class="p_list_style">Du kan se, om der er ledig udstyr i vores bookingmodul. For at booke udstyret
+                    skal
+                    du
+                    dog komme forbi
+                    os i Tech & Story Lab. Du finder os på Guldbergsgade 29N lige bag receptionen i stueetagen.
+                    Vi står klar til at hjælpe dig og kan også vejlede dig i, om du skal have yderligere udstyr til dit
+                    projekt.
+                </p>
+            </div>
+        </div>
+
+        <section class="dataLayout"></section>
     </main>
 
     <!-- Template definition -->
     <template id="smallProductTemplate">
         <article class="smallProduct">
-            <img src="" alt="Product image">
-            <h2></h2>
             <h3></h3>
-            <p class="subtle"><span class="subCategory"></span> | <span class="brandName"></span></p>
+            <h4></h4>
+            <p class="p_list_style"><span class="subCategory"></span> | <span class="brandName"></span></p>
+            <a class="tsl_link" href="../html/form.html">TECH & STORY LAB</a>
         </article>
     </template>
 
-    <script src="database.js"></script>
+
+
+    <footer class="footer">
+
+        <div class="footer_section">
+            <h2>KEA - Københavns Erhvervsakademi</h2>
+            <p>Guldbergsgade 29N</p>
+            <p> 2200 København N</p>
+            <h3>Du skal ikke bare vide.
+                Du skal kunne.</h3>
+        </div>
+
+        <div class="footer_section">
+            <h2>Vejledning</h2>
+            <ul>
+                <li>Studieadministrationen</li>
+                <li>Studie- og Karrierevejledning</li>
+                <li>SPS (specialpædagogisk støtte)</li>
+                <li>SU-vejledning</li>
+                <li>Praktik</li>
+            </ul>
+
+        </div>
+
+        <div class="footer_section">
+            <h2>Relevante links</h2>
+            <ul>
+                <li>KEA Webmail</li>
+                <li>KEA Bibliotek</li>
+                <li>Itslearning</li>
+                <li>Fag- og modulkatalog</li>
+                <li>Studieaktivitetsmodel</li>
+                <li>PARIS-aftalen</li>
+                <li>Ordensregler</li>
+            </ul>
+        </div>
+
+        <div class="footer_section">
+            <h2>Praktisk info</h2>
+            <ul>
+                <li>Cookies og privatliv</li>
+                <li>Persondatapolitik</li>
+                <li>Tilgængelighedserklæring</li>
+                <li>Find vej på KEA</li>
+            </ul>
+        </div>
+
+
+    </footer>
+
+
+
 </body>
+
 
 </html>

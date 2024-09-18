@@ -44,48 +44,45 @@ main p {
   font-size: var(--fs-xs);
 }
 
-  h1 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-xl);
-    color: var(--sekundaer-clr);
-  }
-  
-  h2 {
-    font-family: var(--ff-headlines);
-    font-size: var(--fs-l);
-    color: var(--sekundaer-clr);
-  }
+h1 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-xl);
+  color: var(--sekundaer-clr);
+}
 
-  img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block; /* Tilføjet for at gøre margin-auto effektive */
-    margin: 0 auto; /* Centrerer billederne horisontalt */
-  
-  }
+h2 {
+  font-family: var(--ff-headlines);
+  font-size: var(--fs-l);
+  color: var(--sekundaer-clr);
+}
 
-  button {
-    background-color: var(--primaer-clr);
-    color: #ffffff; /* Tekstfarve */
-    border: none; /* Fjern kanten */
-    border-radius: 15px;
-    padding: 11px 35px; /* Indvendig polstring */
-    font-size: var(--fs-s); 
-    cursor: pointer; 
-  
-  }
-  
-  button:hover {
-    background-color: var(--sekundaer-clr); /* Baggrundsfarve */
-    color: #fff; /* Tekstfarve */
-  }
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Tilføj topmargin efter behov */
-  }
-  
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Tilføjet for at gøre margin-auto effektive */
+  margin: 0 auto; /* Centrerer billederne horisontalt */
+}
+
+button {
+  background-color: var(--primaer-clr);
+  color: #ffffff; /* Tekstfarve */
+  border: none; /* Fjern kanten */
+
+  padding: 11px 35px; /* Indvendig polstring */
+  font-size: var(--fs-s);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--sekundaer-clr); /* Baggrundsfarve */
+  color: #fff; /* Tekstfarve */
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Tilføj topmargin efter behov */
+}
+
 .back_button {
   background-color: var(--primaer-clr);
   color: white;

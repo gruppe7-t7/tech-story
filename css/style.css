@@ -37,6 +37,7 @@ html {
 
 main {
   padding: 0 80px; /* Tilføjer lidt plads på siderne */
+  background-color: var(--tridaer-clr);
 }
 
 main p {

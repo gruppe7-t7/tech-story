@@ -95,3 +95,7 @@ button:hover {
   padding: 0.2rem;
   transition: 0.3s;
 }
+
+.hvid {
+  background-color: white;
+}

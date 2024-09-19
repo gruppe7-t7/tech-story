@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "Roboto-bold";
+  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-light";
+  src: url(../fonts/Roboto/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-regular";
+  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+
+html {
+  --fs-body: 20px;
+  --fs-xl: 4.4rem; /* Dette svare til 88 px, som passer til vores styletile */
+  --fs-l: 3.25rem;
+  --fs-m: 1.6rem;
+  --fs-s: 1rem;
+  --fs-xs: 0.8rem;
+
+  --primaer-clr: #e782a9;
+  --sekundaer-clr: #233249;
+  --tridaer-clr: #ededed;
+  --overige-clr: #ea5045;
+
+  --lh-main: 2em;
+
+  --ff-headlines: "Roboto-bold", sans-serif;
+  --ff-main: "Roboto-regular", sans-serif;
+  --ff-special: "Roboto-regular", sans-serif;
+}
+
 .grid-item img {
   max-width: 100%;
   height: auto;
@@ -40,13 +75,15 @@ body {
 }
 
 .grid-item h2 {
-  font-size: 24px;
+  font-size: var(--fs-m);
   margin-bottom: 10px;
   color: #233249;
 }
 
 .grid-item p {
   margin-bottom: 15px;
+  font-family: var(--ff-main);
+  font-size: var(--fs-xs);
 }
 
 .link-button {
@@ -56,6 +93,7 @@ body {
   padding: 10px 15px;
   border-radius: 5px;
   text-align: center;
+  background-color: var(--sekundaer-clr);
 }
 
 .link-button:hover {
@@ -64,7 +102,7 @@ body {
 
 .bookingh1 {
   color: #ffffff;
-  font-size: 100px;
+  font-size: var(--fs-xl);
   display: flex;
   justify-content: left;
   margin-left: 100px;
@@ -87,6 +125,7 @@ body {
 .booking-item img {
   width: 80%;
   margin: 50px;
+  
 }
 
 .booking-content {
@@ -98,7 +137,7 @@ body {
 
 .h2del2 {
   color: #ffffff;
-  font-size: 60px;
+  font-size: var(--fs-l);
   margin-bottom: 0px;
 }
 

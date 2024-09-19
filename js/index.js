@@ -50,7 +50,7 @@ function showCategory(cat) {
   imgElement.alt = cat.category;
 
   // Set link to the product list page
-  clone.querySelector("a").href = `html/productlist.html?category=${cat.category}`;
+  clone.querySelector("a").href = `productlist.html?category=${cat.category}`;
 
   // Append to grid container
   document.querySelector(".grid-container").appendChild(clone);

@@ -5,6 +5,7 @@
 }
 
 .top-bar {
+  font-family: "Roboto-regular", sans-serif;
   background-color: #d4d4d4;
   padding: 3px 0;
   display: flex;
@@ -36,6 +37,7 @@
 }
 
 nav {
+  font-family: "Roboto-regular", sans-serif;
   background-color: #233249;
   display: flex;
   justify-content: space-between;
@@ -127,6 +129,7 @@ nav {
 /*footer*/
 
 .footer {
+  font-family: "Roboto-regular", sans-serif;
   background-color: #233249;
   color: white;
   padding: 16px;

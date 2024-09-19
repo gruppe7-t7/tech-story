@@ -47,6 +47,7 @@ body {
 }
 
 .overskrift {
+  font-family: "Roboto-bold", sans-serif;
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -75,6 +76,7 @@ body {
 }
 
 .grid-item h2 {
+  font-family: "Roboto-regular", sans-serif;
   font-size: var(--fs-m);
   margin-bottom: 10px;
   color: #233249;
@@ -87,6 +89,7 @@ body {
 }
 
 .link-button {
+  font-family: "Roboto-regular", sans-serif;
   text-decoration: none;
   background-color: #e782a9;
   color: white;
@@ -101,6 +104,7 @@ body {
 }
 
 .bookingh1 {
+  font-family: "Roboto-bold", sans-serif;
   color: #ffffff;
   font-size: var(--fs-xl);
   display: flex;
@@ -125,7 +129,6 @@ body {
 .booking-item img {
   width: 80%;
   margin: 50px;
-  
 }
 
 .booking-content {
@@ -136,12 +139,14 @@ body {
 }
 
 .h2del2 {
+  font-family: "Roboto-regular", sans-serif;
   color: #ffffff;
   font-size: var(--fs-l);
   margin-bottom: 0px;
 }
 
 p {
+  font-family: "Roboto-regular", sans-serif;
   color: var(--sekundaer-clr);
   font-size: 1rem;
   line-height: 1.5;

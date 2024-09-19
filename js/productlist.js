@@ -79,8 +79,9 @@ function showProduct(product) {
   copy.querySelector("h4").textContent = product.category;
   copy.querySelector(".brandName").textContent = product.brand;
   copy.querySelector(".subCategory").textContent = product.type;
+  copy.querySelector("a").href = `product.html?id=${product.id}`;
 
   // Append the product to the section
   document.querySelector("section").appendChild(copy);
 }
-//mon det virker 
+//mon det virker

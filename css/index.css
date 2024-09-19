@@ -47,7 +47,6 @@ body {
 }
 
 .overskrift {
-  font-family: "Roboto-bold", sans-serif;
   display: flex;
   justify-content: center;
   margin-top: 40px;
@@ -76,7 +75,6 @@ body {
 }
 
 .grid-item h2 {
-  font-family: "Roboto-regular", sans-serif;
   font-size: var(--fs-m);
   margin-bottom: 10px;
   color: #233249;
@@ -89,9 +87,22 @@ body {
 }
 
 .link-button {
-  font-family: "Roboto-regular", sans-serif;
   text-decoration: none;
   background-color: #e782a9;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: var(--primaer-clr);
+}
+
+.link-button:hover {
+  background-color: #233249;
+}
+
+.link-button_button {
+  text-decoration: none;
+  background-color: var(--sekundaer-clr);
   color: white;
   padding: 10px 15px;
   border-radius: 5px;
@@ -99,12 +110,10 @@ body {
   background-color: var(--sekundaer-clr);
 }
 
-.link-button:hover {
-  background-color: #233249;
+.link-button_button:hover {
+  background-color: #e782a9;
 }
-
 .bookingh1 {
-  font-family: "Roboto-bold", sans-serif;
   color: #ffffff;
   font-size: var(--fs-xl);
   display: flex;
@@ -139,15 +148,13 @@ body {
 }
 
 .h2del2 {
-  font-family: "Roboto-regular", sans-serif;
   color: #ffffff;
   font-size: var(--fs-l);
   margin-bottom: 0px;
 }
 
 p {
-  font-family: "Roboto-regular", sans-serif;
-  color: var(--sekundaer-clr);
+  color: var();
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 10px;

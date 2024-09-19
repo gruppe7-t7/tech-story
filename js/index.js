@@ -6,34 +6,52 @@ const options = {
   },
 };
 
+// Category to image mapping
+const categoryImageMap = {
+  "Audio/Photo/Video Equipment": "../images/camera_canon_big.webp",
+  "Mobile Devices": "../images/mic_square.webp",
+  "Progammable Logic Devices": "../images/mic_small.webp",
+  "Board Games": "../images/photo_studio.webp",
+  "Cables & Connectors": "../images/cables.webp",
+  "Electronic Visual Displays": "../images/vr.webp",
+
+  // Add other categories with their respective images here
+};
+
 fetch(url, options)
   .then((res) => res.json())
   .then(showCategories);
 
 function showCategories(cats) {
-  const uniqueCategories = new Set(); // For unikke kategorier
+  const uniqueCategories = new Set();
 
   cats.forEach((cat) => {
     if (!uniqueCategories.has(cat.category)) {
-      uniqueCategories.add(cat.category); // Tilføj til Set
-      showCategory(cat); // Vis kun, hvis den ikke allerede er i Set
+      uniqueCategories.add(cat.category);
+      showCategory(cat); // Show only if it's not already in the Set
     }
   });
 }
 
 function showCategory(cat) {
-  // Hent template
+  // Get template
   const template = document.querySelector("#categoryTemplate").content;
 
-  // Klon template
+  // Clone template
   const clone = template.cloneNode(true);
 
-  // Tilpas indhold
+  // Update content
   clone.querySelector("h2").textContent = cat.category;
-  clone.querySelector("img").src = `images/${cat.category.toLowerCase()}.webp`; // Dynamisk billede baseret på kategori
-  clone.querySelector("img").alt = cat.category;
+
+  // Dynamically set image based on category
+  const imgElement = clone.querySelector("img");
+  const imageUrl = categoryImageMap[cat.category] || `../images/camera_canon_big.webp`; // Use default if no mapping found
+  imgElement.src = imageUrl;
+  imgElement.alt = cat.category;
+
+  // Set link to the product list page
   clone.querySelector("a").href = `html/productlist.html?category=${cat.category}`;
 
-  // Append til grid-container
+  // Append to grid container
   document.querySelector(".grid-container").appendChild(clone);
 }

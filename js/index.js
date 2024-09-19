@@ -8,12 +8,12 @@ const options = {
 
 // Category to image mapping
 const categoryImageMap = {
-  "Audio/Photo/Video Equipment": "../images/camera_canon_big.webp",
-  "Mobile Devices": "../images/mic_square.webp",
-  "Progammable Logic Devices": "../images/mic_small.webp",
-  "Board Games": "../images/photo_studio.webp",
-  "Cables & Connectors": "../images/cables.webp",
-  "Electronic Visual Displays": "../images/vr.webp",
+  "Audio/Photo/Video Equipment": "images/camera_canon_big.webp",
+  "Mobile Devices": "images/mic_square.webp",
+  "Progammable Logic Devices": "images/mic_small.webp",
+  "Board Games": "images/photo_studio.webp",
+  "Cables & Connectors": "images/cables.webp",
+  "Electronic Visual Displays": "images/vr.webp",
 
   // Add other categories with their respective images here
 };
@@ -45,7 +45,7 @@ function showCategory(cat) {
 
   // Dynamically set image based on category
   const imgElement = clone.querySelector("img");
-  const imageUrl = categoryImageMap[cat.category] || `../images/camera_canon_big.webp`; // Use default if no mapping found
+  const imageUrl = categoryImageMap[cat.category] || `images/camera_canon_big.webp`; // Use default if no mapping found
   imgElement.src = imageUrl;
   imgElement.alt = cat.category;
 

@@ -83,3 +83,4 @@ function showProduct(product) {
   // Append the product to the section
   document.querySelector("section").appendChild(copy);
 }
+//mon det virker 

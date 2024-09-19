@@ -6,29 +6,52 @@ const options = {
   },
 };
 
+// Category to image mapping
+const categoryImageMap = {
+  "Audio/Photo/Video Equipment": "../images/camera_canon_big.webp",
+  "Mobile Devices": "../images/mic_square.webp",
+  "Progammable Logic Devices": "../images/mic_small.webp",
+  "Board Games": "../images/photo_studio.webp",
+  "Cables & Connectors": "../images/cables.webp",
+  "Electronic Visual Displays": "../images/vr.webp",
+
+  // Add other categories with their respective images here
+};
+
 fetch(url, options)
   .then((res) => res.json())
   .then(showCategories);
 
 function showCategories(cats) {
-  const uniqueCategories = new Set(); // To track unique categories
+  const uniqueCategories = new Set();
 
   cats.forEach((cat) => {
     if (!uniqueCategories.has(cat.category)) {
-      uniqueCategories.add(cat.category); // Add to Set
-      showCategory(cat); // Display only if not already in Set
+      uniqueCategories.add(cat.category);
+      showCategory(cat); // Show only if it's not already in the Set
     }
   });
 }
 
 function showCategory(cat) {
-  //Grab Template
-  const template = document.querySelector("template").content;
-  //Clone
+  // Get template
+  const template = document.querySelector("#categoryTemplate").content;
+
+  // Clone template
   const clone = template.cloneNode(true);
-  //Change content
-  clone.querySelector("a").textContent = cat.category;
+
+  // Update content
+  clone.querySelector("h2").textContent = cat.category;
+
+  // Dynamically set image based on category
+  const imgElement = clone.querySelector("img");
+  const imageUrl = categoryImageMap[cat.category] || `../images/camera_canon_big.webp`; // Use default if no mapping found
+  imgElement.src = imageUrl;
+  imgElement.alt = cat.category;
+
+  // Set link to the product list page
   clone.querySelector("a").href = `html/productlist.html?category=${cat.category}`;
-  //Append
-  document.querySelector(".catList ol").appendChild(clone);
+
+  // Append to grid container
+  document.querySelector(".grid-container").appendChild(clone);
 }

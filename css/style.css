@@ -1,16 +1,16 @@
 @font-face {
   font-family: "Roboto-bold";
-  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("ttf");
+  src: url(../fonts/Roboto/Roboto-Bold.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-light";
-  src: url(../fonts/Roboto/Roboto-Light.ttf) format("ttf");
+  src: url(../fonts/Roboto/Roboto-Light.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Roboto-regular";
-  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("ttf");
+  src: url(../fonts/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 
 /* fs=font size */
@@ -52,7 +52,7 @@ h1 {
 
 h2 {
   font-family: var(--ff-headlines);
-  font-size: var(--fs-xl);
+  font-size: var(--fs-l);
   color: var(--sekundaer-clr);
 }
 
@@ -61,6 +61,26 @@ img {
   height: auto;
   display: block; /* Tilføjet for at gøre margin-auto effektive */
   margin: 0 auto; /* Centrerer billederne horisontalt */
+}
+
+button {
+  background-color: var(--primaer-clr);
+  color: #ffffff; /* Tekstfarve */
+  border: none; /* Fjern kanten */
+
+  padding: 11px 35px; /* Indvendig polstring */
+  font-size: var(--fs-s);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--sekundaer-clr); /* Baggrundsfarve */
+  color: #fff; /* Tekstfarve */
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Tilføj topmargin efter behov */
 }
 
 .back_button {

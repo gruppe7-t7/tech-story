@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/burger.css">
     <link rel="stylesheet" href="fonts/Roboto/Roboto-Regular.ttf">
 </head>
@@ -60,62 +59,78 @@
         <h1 class="overskrift">Tech & Story Lab</h1>
         <div class="grid_1-1-1">
             <section class="catList">
-                <template>
-                    <li><a href="html/productlist.html">Foto/Lyd/Video/</a></li>
+                <template id="categoryTemplate">
+
+                    <div class="grid-item flex_col">
+                        <img src="" alt="">
+                        <h2></h2>
+                        <p>Se udvalget af udstyr</p>
+                        <a href="" class="link-button">LINK</a>
+                    </div>
+
                 </template>
-                <ol>
-                </ol>
+
+                <div class="grid-container"></div>
             </section>
         </div>
 
 
-        <main>
-            <div class="grid_1-1-1">
-                <div class="grid-item flex_col">
-                    <img src="images/cables.webp" alt="Foto/Lyd/Video">
-                    <h2>Foto/Lyd/Video</h2>
-                    <p>Se udvalget af udstyr</p>
-                    <a href="html/productlist.html" class="link-button">LINK</a>
-                </div>
-                <div class="grid-item flex_col">
-                    <img src="images/camera_canon_big.webp" alt="Kunstig Intelligens">
-                    <h2>Kunstig Intelligens</h2>
-                    <p>Se udvalget af udstyr</p>
-                    <a href="html/productlist.html" class="link-button">LINK</a>
-                </div>
-                <div class="grid-item flex_col">
-                    <img src="images/camera_fujifilm.webp" alt="Kabler & Adapter">
-                    <h2>Kabler & Adapter</h2>
-                    <p>Se udvalget af udstyr</p>
-                    <a href="html/productlist.html" class="link-button">LINK</a>
-                </div>
-                <div class="grid-item flex_col">
-                    <img src="images/camera_sony_big.webp" alt="Virtuel Reality">
-                    <h2>Virtuel Reality</h2>
-                    <p>Se udvalget af udstyr</p>
-                    <a href="html/productlist.html" class="link-button">LINK</a>
-                </div>
-                <div class="grid-item flex_col">
-                    <img src="images/camera_sony_big.webp" alt="Program Enheder">
-                    <h2>Program Enheder</h2>
-                    <p>Se udvalget af udstyr</p>
-                    <a href="html/productlist.html" class="link-button">LINK</a>
-                </div>
-                <div class="grid-item flex_col">
-                    <img src="images/camera_sony_small_side.webp" alt="Tilbehør">
-                    <h2>Tilbehør</h2>
-                    <p>Se udvalget af udstyr</p>
-                    <a href="html/productlist.html" class="link-button">LINK</a>
+        <div class="booking-section">
+            <h1 class="bookingh1">BOOKING</h1>
+            <div class="booking-item">
+
+                <img src="/images/podcast_studio.webp" alt="Podcast Studio">
+                <div class="booking-content">
+                    <h2 class="h2del2">Podcast Studio</h2>
+                    <p>Drømmer du om at udgive din podcast på de store tjenester (Spotify, Apple Podcast, Google Podcast
+                        m.fl.)?
+
+                        Ansøg om at få din podcast på KEAs officielle podcastprofil! Du får din helt egen kanal på
+                        profilen med alle dine
+                        afsnit, hjælp til at nå ud til KEAs 10.000+ følgere og faglig sparring fra KEAs podcast-netværk.
+                    </p>
+                    <p>Vi udvælger podcasts af særlig høj kvalitet, og hvis du i første omgang ikke bliver udvalgt,
+                        skal du ikke miste modet –
+                        vi vil gerne hjælpe dig med at tage din podcast til næste niveau med feedback, workshops og
+                        faglig sparring.
+
+                        Udfyld tilmeldingsformularen herunder og du vil høre fra os hurtigst muligt</p>
+
+
+                    <a href="#" class="link-button">BOOK HER</a>
                 </div>
             </div>
-        </main>
 
+            <div class="booking-item">
 
+                <div class="booking-content">
+                    <h2 class="h2del2">Photo & Video Studio</h2>
+                    <p>Photo & Video Studio
 
+                        Tech & Story Lab
+                        Foto- og Videostudiet kan bookes mandag-fredag mellem kl. 09:00-15:00. Det er kun muligt at
+                        booke det 1 dag ad gangen.
+                        Når du har booket studiet, kan du afhente nøglen i Tech & Story Lab samme dag.</p>
 
+                    <a href="#" class="link-button">BOOK HER</a>
 
+                </div>
+                <img src="/images/podcast_studio.webp" alt="Photo & Video Studio">
+            </div>
 
+            <div class="booking-item">
+                <img src="/images/podcast_studio.webp" alt="Eyetracking Studio">
+                <div class="booking-content">
+                    <h2 class="h2del2">Eyetracking Studio</h2>
+                    <p>KEA’s Eyetracking Studio tilbyder dig adgang til avancerede systemer og ekspertvejledning.
+                        Udforsk, eksperimenter og
+                        forbedr dine projekter med cutting-edge teknologi.</p>
 
+                    <a href="#" class="link-button">BOOK HER</a>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
